@@ -19,6 +19,8 @@ file(GLOB IMGUI_SOURCES
     imgui/imgui_demo.cpp
     imgui/imgui_widgets.cpp
 	${TABLES_SOURCE}
+    imgui/backends/imgui_impl_dx11.cpp
+    imgui/backends/imgui_impl_win32.cpp
 )
 
 set(IMGUI_STATIC "no" CACHE STRING "Build as a static library")
