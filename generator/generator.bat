@@ -18,7 +18,7 @@ set PATH=%PATH%;C:\Tools\luapower-all-master\bin\mingw64
 :: arg[2] options as words in one string: internal for imgui_internal generation, freetype for freetype generation, comments for comments generation
 :: examples: "" "internal" "internal freetype comments"
 :: arg[3..n] name of implementations to generate and/or CFLAGS (e.g. -DIMGUI_USER_CONFIG or -DIMGUI_USE_WCHAR32)
-luajit ./generator.lua cl "internal" dx11
+luajit ./generator.lua cl "internal" dx11 sdl
 
 ::leave console open
 cmd /k

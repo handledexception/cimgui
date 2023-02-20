@@ -19,6 +19,7 @@ file(GLOB IMGUI_SOURCES
     imgui/imgui_demo.cpp
     imgui/imgui_widgets.cpp
 	${TABLES_SOURCE}
+    imgui/backends/imgui_impl_sdl.cpp
     imgui/backends/imgui_impl_dx11.cpp
     imgui/backends/imgui_impl_win32.cpp
 )
@@ -49,7 +50,7 @@ else (WIN32)
     target_compile_definitions(cimgui PUBLIC IMGUI_IMPL_API=extern\t\"C\"\t)
 endif (WIN32)
 
-target_include_directories(cimgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(cimgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ../SDL2/include)
 target_include_directories(cimgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/imgui)
 set_target_properties(cimgui PROPERTIES PREFIX "")
 target_link_libraries(cimgui ${IMGUI_LIBRARIES})

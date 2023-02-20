@@ -4,7 +4,6 @@
 //docking branch
 #ifndef CIMGUI_INCLUDED
 #define CIMGUI_INCLUDED
-#define CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 #include <stdio.h>
 #include <stdint.h>
 #if defined _WIN32 || defined __CYGWIN__
@@ -4401,3 +4400,7 @@ CIMGUI_API void ImVector_ImWchar_UnInit(ImVector_ImWchar* p);
 
 
 #endif //CIMGUI_INCLUDED
+
+
+
+
